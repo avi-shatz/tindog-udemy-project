@@ -114,3 +114,11 @@ i {
 .carousel-item {
   padding: 0 15%
 }
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-col {
+  padding: 5% 3%;
+}
