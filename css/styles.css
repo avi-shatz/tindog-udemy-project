@@ -18,12 +18,13 @@ h2 {
   font-size: 3rem;
   line-height: 1.5;
 }
+
 i {
   margin-right: 3px;
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* navbar */
@@ -44,7 +45,7 @@ i {
 
 /* Download buttons */
 .download-buttons {
-  margin: 5% 4% 5% 0;
+  margin: 5% 4% 0 0;
 }
 
 .upper-title {
@@ -54,7 +55,9 @@ i {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
-  margin: 0 0 16% 10%;
+  margin: 40px 0 0 40px;
+  position: absolute;
+  z-index: 1;
 }
 
 .colored-icons {
@@ -66,10 +69,24 @@ i {
   color: #ff4c68;
 }
 
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
 /* features section */
 #features {
   text-align: center;
   padding: 8% 11%;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 #features h3 {
@@ -120,5 +137,33 @@ i {
 }
 
 .pricing-col {
-  padding: 5% 3%;
+  padding: 5% 2%;
+}
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  font-weight: 800;
+  padding: 8% 15% 9%;
+}
+
+#cta h3 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 3%;
+}
+
+.footer-icons i{
+  margin: 10px;
+}
+
+.footer-icons p{
+  margin: 4% auto;
 }
